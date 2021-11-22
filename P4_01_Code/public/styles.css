@@ -1,0 +1,44 @@
+#bloc-page {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 100%;
+	background-image: url(img/alaska1.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#home-1 {
+	padding-top: 150px;
+	box-sizing: border-box;
+	padding-bottom: 350px;
+}
+
+#home-2 {
+	padding-top: 400px;
+	background-color: #7a92bc;
+	padding: 40px 0 120px 0;
+	color: white;
+}
+
+#home-2 img {
+	max-width: 280px;
+	width: 100;
+}
+
+footer {
+	background-color: #343a40;
+	color: white;
+	padding: 100px 0 20px 0;
+}
+
+#home-3 {
+	padding-top: 200px;
+	padding-bottom: 150px;
+}
+
+#biographie-article {
+	position: relative;
+	margin-bottom: 100px;
+}
