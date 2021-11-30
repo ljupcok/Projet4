@@ -15,7 +15,19 @@
             <input type="submit" value="Envoyer" />
         </p>
     </form>
+    <?php
+    if (!empty($_GET['error'])) {
+        switch ($_GET['error']) {
+            case 1:
+                echo '<p>Mot de passe ou identifiant false</p>';
+                break;
+            case 2:
+                echo '<p>Veuillez remplir le formulaire</p>';
+                break;
+        }
+    }
 
+    ?>
     <p><a href="index.php">Retour</a></p>
 
 </body>

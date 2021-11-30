@@ -21,6 +21,7 @@ spl_autoload_register(
 );
 
 require('env.php');
+
 Database::$servername = $servername;
 Database::$username = $username;
 Database::$password = $password;
@@ -28,7 +29,6 @@ Database::$dbname = $dbname;
 
 $Frontend = new Frontend();
 $Backend = new Backend();
-
 
 try {
 
@@ -40,8 +40,11 @@ try {
             case 'login':
                 $Frontend->login();
                 break;
+            case 'adminSide':
+                $Frontend->adminSide();
+                break;
             case 'connect':
-                $Backtend->connect();
+                $Backend->connect();
                 break;
         }
     } else {
