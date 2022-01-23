@@ -3,6 +3,6 @@
      <nav class="nav nav-masthead justify-content-center">
          <a class="nav-link active" href="index.php">Home</a>
          <a class="nav-link" href="biographie.php?action=biographie">Biographie</a>
-         <a class="nav-link" href="articles.php">Billets</a>
+         <a class="nav-link" href="articles.php">posts</a>
      </nav>
  </div>

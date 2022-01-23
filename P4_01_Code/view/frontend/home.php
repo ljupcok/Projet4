@@ -17,7 +17,7 @@
                     <h3>Jean Forteroche</h3>
                     <nav>
                         <a href="index.php">Home</a>
-                        <a href="index.php?action=listsBillets">Billets</a>
+                        <a href="index.php?action=postsLists">billets</a>
                     </nav>
                 </div>
             </header>
@@ -26,7 +26,7 @@
                 <div>
 
                     <h1>Bienvenue sur mon blog.</h1>
-                    <p>Billet simple pour l'Alaska : découvrez mon nouveau roman en ligne !</p>
+                    <p>billet simple pour l'Alaska : découvrez mon nouveau roman en ligne !</p>
 
                 </div>
             </section>
@@ -43,26 +43,7 @@
             </section>
 
             <footer>
-                <div>
-                    <div>
-                        <div>
-
-                            <div>
-                                <h5>Me retrouver sur</h5>
-                                <div>
-                                    <a href="https://www.facebook.com/openclassroomsfr" title="Page Facebook" class="text-white"><span class="fab fa-facebook-square logo"></span>Facebook</a><br>
-                                    <a href="https://twitter.com/home" title="Compte Twitter" class="text-white"><span class="fab fa-twitter-square logo"></span>Twitter</a><br>
-                                </div>
-                            </div>
-                            <div>
-                                <h5>Admin</h5>
-                                <div>
-                                    <a href="index.php?action=login" class="text-white">Se connecter</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <?php include('pieddepage.php') ?>
             </footer>
 
         </div>

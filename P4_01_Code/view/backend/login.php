@@ -7,7 +7,7 @@
 
 <body>
     <h2>Connexion:</h2>
-    <form action="index.php?action=connect" method="POST">
+    <form action="indexAdmin.php" method="POST">
         <p>
             <label>Pseudo</label> : <input type="text" name="pseudo" /><br />
             <label>Mot de passe</label> : <input type="password" name="pass" /><br />

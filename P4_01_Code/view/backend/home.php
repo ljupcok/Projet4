@@ -21,37 +21,22 @@
 <body>
 
     <div>
-        <h3>Jean Forteroche</h3>
+        <h3>Bienvenue Jean Forteroche</h3>
         <nav>
             <a>
                 <h4>Page Admin</h4>
             </a>
             <a href="index.php">Home</a>
-            <a href="index.php?action=listsBillets">Billets</a>
+            <a href="index.php?action=postsLists">billets</a>
+            <a href="indexAdmin.php?action=listPost">Modération des billets</a>
+            <a href="indexAdmin.php?action=viewAddPost">Ajouter des billets</a>
+            <a href="indexAdmin.php?action=reportedList">Commentaire signalé</a>
+
         </nav>
     </div>
 
-    <section>
-        <form method="POST" action="data.php">
 
-            <h2>Titre</h2>
-            <input type="text" name="titre" required=""><br />
 
-            <h2>Contenu</h2>
-            <textarea class="tinymce" id="mytextarea" name="contenu"></textarea><br />
-            <input type="submit" name="submit" value="Publier" />
-        </form>
-    </section>
-
-    <section id="edition">
-        <ul>
-            <li><a href="">billets</a>|
-                <a href="">Modifier</a>
-                | <a href="">Supprimer</a>
-            </li>
-
-        </ul>
-    </section>
 </body>
 
 </html>

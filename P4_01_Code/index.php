@@ -2,17 +2,16 @@
 session_start();
 
 use kukovski\projet\model\Frontend;
-use kukovski\projet\model\Backend;
 use kukovski\projet\model\Database;
 
 
 spl_autoload_register(
     function ($class) {
-        $controllers = ['Frontend', 'Backend'];
+        $controller = 'Frontend';
         $array = explode('\\', $class);
         $nameClass = $array[count($array) - 1];
 
-        if (in_array($nameClass, $controllers)) {
+        if ($nameClass === $controller) {
             require 'controller/' . $nameClass . '.php';
         } else {
             require 'model/' . $nameClass . '.php';
@@ -28,24 +27,26 @@ Database::$password = $password;
 Database::$dbname = $dbname;
 
 $Frontend = new Frontend();
-$Backend = new Backend();
 
 try {
 
     if (!empty($_GET['action'])) {
         switch ($_GET['action']) {
-            case 'listsBillets':
-                $Frontend->listsBillets();
+            case 'postsLists':
+                $Frontend->postsLists();
                 break;
-            case 'login':
-                $Frontend->login();
+            case 'billet':
+                $Frontend->billet();
                 break;
-            case 'adminSide':
-                $Frontend->adminSide();
+            case 'addComment':
+                $Frontend->addComment();
                 break;
-            case 'connect':
-                $Backend->connect();
+            case 'report':
+                $Frontend->report();
                 break;
+            default:
+                $Frontend->home();
+                var_dump($_GET['report']);
         }
     } else {
         $Frontend->home();
